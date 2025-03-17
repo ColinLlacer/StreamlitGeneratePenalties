@@ -17,13 +17,14 @@ The application uses the Exponential Power distribution with the following param
 - β (beta): Shape parameter controlling the tail behavior
 
 The probability density function (PDF) is defined as:
-$$f(x; \mu, \sigma, \beta) = \frac{\beta}{2\sigma\Gamma(1/\beta)} \exp\left(-\left|\frac{x-\mu}{\sigma}\right|^\beta\right)$$
+
+f(x; μ, σ, β) = (β / (2σΓ(1/β))) * exp(-(|x-μ|/σ)^β)
 
 Where:
-- $\Gamma$ is the gamma function
-- $\beta > 0$ controls the shape (higher values create thinner tails than the normal distribution)
-- When $\beta = 2$, this becomes the normal distribution
-- When $\beta = 1$, this becomes the Laplace distribution
+- Γ is the gamma function
+- β > 0 controls the shape (higher values create thinner tails than the normal distribution)
+- When β = 2, this becomes the normal distribution
+- When β = 1, this becomes the Laplace distribution
 
 ## Penalty Calculation
 The penalty function is derived from the PDF as follows:
@@ -54,4 +55,3 @@ The application uses an object-oriented approach with three main classes:
 - Pandas
 - Plotly
 - SciPy
-
