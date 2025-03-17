@@ -11,4 +11,5 @@ dependencies = [
     "plotly-express>=0.4.1",
     "scipy>=1.15.2",
     "streamlit>=1.43.2",
+    "xlsxwriter>=3.2.2",
 ]
